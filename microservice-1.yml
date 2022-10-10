@@ -1,4 +1,6 @@
+spring:
+  application:
+    name: lesstinyservice
 
-server:
-  port: 50955
+
 
