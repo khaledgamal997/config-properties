@@ -1,0 +1,6 @@
+server:
+  port: 57562
+
+spring:
+  application:
+    name: tinyservice
