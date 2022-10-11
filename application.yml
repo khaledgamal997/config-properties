@@ -8,3 +8,9 @@ eureka:
 
 greeting:
   message: webhook worked yaaay!!
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
