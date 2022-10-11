@@ -1,6 +1,5 @@
-server:
-  port: 57562
+
 
 spring:
   application:
-    name: tinyservice
+    name: sevice-two
