@@ -7,10 +7,11 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 
 greeting:
-  message: webhook worked yaaay!!
+  message: 1s webhook worked yaaay!!
 
 management:
   endpoints:
     web:
       exposure:
         include: hystrix.stream
+
