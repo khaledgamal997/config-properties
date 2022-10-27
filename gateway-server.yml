@@ -10,12 +10,26 @@ eureka:
 spring:
   cloud:
     gateway:
-      discovery.locator:
-        enabled: true
-        lowerCaseServiceId: true
+      routes:
+      - id: hello-server
+        uri: lb://hello-server
+
+        predicates:
+        - Path=/s1/**
+
+        filters: 
+        - RewritePath=/s1/
+                    (?<path>.*),/$\{path}
+
+          
 
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:8901/auth/user
