@@ -21,8 +21,9 @@ spring:
           predicates:
           - Path=/s1/**
           filters:
+          - RedirectTo=302,https://twitter.com  
           - RewritePath=/s1/(?<path>.*), /$\{path}
-          - RedirectTo=302, https://spring.io
+          
 
 # security:
 #   oauth2:
