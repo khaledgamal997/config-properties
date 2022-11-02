@@ -21,7 +21,6 @@ spring:
           predicates:
           - Path=/s1/**
           filters:
-          - RedirectTo=302,https://twitter.com  
           - RewritePath=/s1/(?<path>.*), /$\{path}
           
 
