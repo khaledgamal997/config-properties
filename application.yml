@@ -17,3 +17,8 @@ management:
       exposure:
         include: hystrix.stream
 
+logging:
+  level:
+    com.netflix: WARN
+    org.springframework.web: WARN
+    com.*: DEBUG
