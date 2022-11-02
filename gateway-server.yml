@@ -22,7 +22,7 @@ spring:
           - Path=/s1/**
           filters:
           - RewritePath=/s1/(?<path>.*), /$\{path}
-
+          - RedirectTo=302, https://spring.io
 
 # security:
 #   oauth2:
